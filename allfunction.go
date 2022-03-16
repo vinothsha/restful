@@ -113,5 +113,7 @@ func UpdateStudent(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(err)
 	}
 	fmt.Fprintf(w, "updated successfully")
-
+	// w.WriteHeader(http.StatusCreated)
+	// Conv, _ := json.MarshalIndent(UpdateStudent, "", " ")
+	// fmt.Fprintf(w, "%s", string(Conv))
 }
